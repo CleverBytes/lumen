@@ -18,7 +18,7 @@ date_default_timezone_set(env('APP_TIMEZONE', 'UTC'));
 | application as an "IoC" container and router for this framework.
 |
 */
-
+    'uses' => 'AccessTokenController@issueToken',
 $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
